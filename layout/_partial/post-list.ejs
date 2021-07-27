@@ -1,0 +1,59 @@
+<!-- Page Wrapper -->
+<div id="page-wrapper">
+
+    <!-- Banner -->
+        <section id="banner">
+            <div class="inner">
+                <div class="logo"><span class="icon fa-gem"></span></div>
+                <h2>This is Solid State</h2>
+                <p>Another free + fully responsive site template by <a href="http://html5up.net">HTML5 UP</a></p>
+            </div>
+        </section>
+
+    <!-- Wrapper -->
+        <section id="wrapper">
+
+            <!-- One -->
+                <section id="one" class="wrapper spotlight style1">
+                    <div class="inner">
+                        <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+                        <div class="content">
+                            <h2 class="major">about me</h2>
+                            <h3 style="color: rgb(148, 120, 9);"><%- theme.author %> </h3>
+                            <h3 style="color: rgb(187, 172, 112);">github username: <%- theme.github %> </h3>
+                            <h3 style="color: rgb(156, 148, 115);">twitter username: <%- theme.twitter %> </h3>
+                            <h3 style="color: rgb(224, 215, 176);">keywords: <%- theme.keywords %> </h3>
+                        </div>
+                    </div>
+                </section>
+
+            <!-- Four -->
+                <section id="four" class="wrapper alt style1">
+                    <div class="inner">
+                        <h2 class="major">Vitae phasellus</h2>
+                        <p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
+                        <% page.posts.each(function(post){ %>
+                        <section class="features">
+                            <article>
+                                <!-- <a href="<%- url_for(post.path) %>" class="image"><img src="<%= post.photos %>" alt="" /></a> -->
+                                <h2 class="major"><a href="<%- url_for(post.path) %>"><%= post.title %></a></h2>
+                                <p><%= post.description %></p>
+                                <a href="<%- url_for(post.path) %>" class="special"><%- theme.excerpt_link %></a>
+                            </article>
+                        </section>
+                        <% }) %>
+                        <!-- <ul class="actions">
+                            <li><a href="page.next_link" class="button">Browse All</a></li>
+                        </ul> -->
+                    </div>
+                </section>
+
+        </section>
+</div>
+<div class="paginator">
+    <%- paginator({
+      prev_text: '<apsn class="page-number">PREV</apsn>',
+      next_text: '<apsn class="page-number">NEXT</apsn>',
+      escape: false
+    }) %>
+</div>

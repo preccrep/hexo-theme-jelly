@@ -1,0 +1,47 @@
+keywords: IT
+author: preccrep
+
+twitter: preccrep
+github: preccrep
+
+menu:
+  Home: /
+  Tags: /tags/
+  Categories: /categories/
+  Archives: /archives/
+  Link: /link/
+
+excerpt_link: learn more
+
+valine: # valine评论
+  API_ID: GyC3NzMvd0hT9Yyd2hYIC0MN-gzGzoHsz
+  API_Key: mgOpfzbkHYqU92CV4IDlAUHQ
+
+tocbot: # tocbot文章目录
+  contentSelector: .post-content
+  scrollSmooth: true
+  headingSelector: h1, h2, h3, h4, h5
+  headingsOffset: 45
+  scrollSmoothOffset: -45
+
+sidebar: # 侧边栏
+  首页: { path: /, fa: fa fa-home }
+  归档: { path: /archives/, fa: fa fa-archive }
+  关于: { path: /, fa: fa fa-question-circle }
+  项目: { path: /, fa: fa fa-paper-plane, submenus: { 
+    hexo-theme-sakura: { path: /, fa: fa}, 
+    hexo-theme-story: { path: /, fa: fa}, 
+    hugo-theme-diaspora: { path: /, fa: fa}, 
+    hugo-theme-jsimple: { path: /, fa: fa}
+  } }
+  友链: { path: /, fa: fa fa-link }
+  FOLLOW ME: { path: /, fa: fa fa-heart, submenus: { 
+    qq: { path: /, fa: fa}, 
+    sina: { path: /, fa: fa}, 
+    github: { path: /, fa: fa },
+    weichat: { path: /, fa: fa}, 
+    bilibili: { path: /, fa: fa }
+  } }
+
+search: # 搜索
+  path: "/img"
