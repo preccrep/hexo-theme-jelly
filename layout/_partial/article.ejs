@@ -17,10 +17,29 @@
       <!-- 文章标签 -->
       <div class="tags">
         <span style="font-size:16px; font-weight:bold; background-color: rgb(4, 94, 86); border-radius:25px; padding:2px 10px; text-align: center;">TAG(S):</span>
+        <% if (post.tags) { %> 
         <% post.tags.each(function(tag){%>
           <a href="<%- url_for(tag.path) %>" class="tag" style="color: rgb(22, 184, 122);"><%= tag.name %></a>
         <% }) %>
+        <% } %> 
       </div>
+      </br>
+
+      <% if (!index && !is_post()) { %>
+        <% if (is_tag()) { %>
+          <%- list_tags(post.tags, {style: false}) %>
+        <% } else if (is_category()) { %>  
+          <%- list_categories(post.categories, {
+            class: 'post-category',
+            transform(str) {
+              return titlecase(str);
+            }
+          }) %>
+        <% } else { %> 
+          <%- list_archives() %> 
+        <% } %> 
+      <% } %>
+
       <!-- 上一篇和下一篇 -->
       <hr>
       <div class="post-nav">
@@ -52,4 +71,5 @@
         })
       </script>
     </div>
+
 </article>
