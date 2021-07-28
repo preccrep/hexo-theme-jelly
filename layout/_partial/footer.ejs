@@ -23,18 +23,29 @@
         </form>
         <ul class="contact">
             <li class="icon solid fa-home">
-                Untitled Inc<br />
-                1234 Somewhere Road Suite #2894<br />
-                Nashville, TN 00000-0000
+                <%= theme.company %> <br />
+                <%= theme.address %> 
             </li>
-            <li class="icon solid fa-phone">(000) 000-0000</li>
-            <li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
-            <li class="icon brands fa-twitter"><a href="#">twitter.com/untitled-tld</a></li>
-            <li class="icon brands fa-facebook-f"><a href="#">facebook.com/untitled-tld</a></li>
-            <li class="icon brands fa-instagram"><a href="#">instagram.com/untitled-tld</a></li>
+            <% if (theme.phone) { %> 
+                <li class="icon solid fa-phone"><%= theme.phone %></li>
+            <% } %> 
+            <% if (theme.email) { %> 
+                <li class="icon solid fa-envelope"><a href="<%- theme.email %>"><%= theme.email %></a></li>
+            <% } %> 
+            <% if (theme.twitter) { %> 
+                <li class="icon brands fa-twitter"><a href="https://www.twitter.com/<%- theme.twitter %>">twitter.com/<%= theme.twitter %> </a></li>
+            <% } %> 
+            <% if (theme.facebook) { %> 
+                <li class="icon brands fa-facebook-f"><a href="https://www.facebook.com/<%- theme.facebook %>">facebook.com/<%= theme.facebook %> </a></li>
+            <% } %> 
+            <% if (theme.instagram) { %> 
+                <li class="icon brands fa-instagram"><a href="https://www.instagram.com/<%- theme.instagram %>">instagram.com/<%= theme.instagram %> </a></li>
+            <% } %> 
         </ul>
-        <ul class="copyright">
-            <li>&copy; Untitled Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        <ul class="copyright" style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;">
+            <li>&copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %></br></br>
+                Theme <a href="https://github.com/preccrep/hexo-theme-solid">Solid</a> 
+                <%= __('powered by') %> <a href="https://hexo.io/" target="_blank">Hexo</a></li>
         </ul>
     </div>
 </section>
