@@ -6,5 +6,7 @@
 
  ## Installation method | 安装方法
 
- `git clone https://github.com/preccrep/hexo-theme-solid.git themes/solid`
+ ```
+ git clone https://github.com/preccrep/hexo-theme-solid.git themes/solid
+ ```
 
