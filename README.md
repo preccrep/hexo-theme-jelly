@@ -99,7 +99,7 @@ aboutme: I'm an engineer.
 
 Uncomment the lines that are commented out in the `_config.yml` file according to your needs.
 
-
+Use `<!-- more -->` to specify which part to be revealed in the home page.
 
 ## Recent Update
 

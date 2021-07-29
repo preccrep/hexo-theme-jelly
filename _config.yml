@@ -34,10 +34,10 @@ open_in_new: false
 # baidu_tongji: true
 # google_analytics: true
 
-favicon: /img/jelly.png
+favicon: /img/favicon.ico
 
 # your avatar's url
-avatar: /img/avatar.jpeg
+avatar: 
 
 
 
