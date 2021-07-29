@@ -1,47 +1,64 @@
-keywords: IT
-author: preccrep
-
-twitter: preccrep
-github: preccrep
-
+# Header
 menu:
   Home: /
-  Tags: /tags/
-  Categories: /categories/
-  Archives: /archives/
-  Link: /link/
+  Archives: /archives
 
+# links with icon in the left-column bar
+subnav:
+  # github: "#"
+  # mail: "#"
+  # rss: "#"
+  # zhihu: "#"
+  # weibo: "#"
+  # douban: "#"
+  # facebook: "#"
+  # google: "#"
+  # twitter: "#"
+  # linkedin: "#"
+
+# it is the relative path of the .xml file, the default path is in the source directory
+rss:
+
+# you can modify the value of excerpt_link to what you like
 excerpt_link: learn more
+fancybox: true
+mathjax: true
 
-valine: # valine评论
-  API_ID: GyC3NzMvd0hT9Yyd2hYIC0MN-gzGzoHsz
-  API_Key: mgOpfzbkHYqU92CV4IDlAUHQ
+# open the animation effect, true recommended
+animate: true
 
-tocbot: # tocbot文章目录
-  contentSelector: .post-content
-  scrollSmooth: true
-  headingSelector: h1, h2, h3, h4, h5
-  headingsOffset: 45
-  scrollSmoothOffset: -45
+# whether to open the link in the new window
+open_in_new: false
 
-sidebar: # 侧边栏
-  首页: { path: /, fa: fa fa-home }
-  归档: { path: /archives/, fa: fa fa-archive }
-  关于: { path: /, fa: fa fa-question-circle }
-  项目: { path: /, fa: fa fa-paper-plane, submenus: { 
-    hexo-theme-sakura: { path: /, fa: fa}, 
-    hexo-theme-story: { path: /, fa: fa}, 
-    hugo-theme-diaspora: { path: /, fa: fa}, 
-    hugo-theme-jsimple: { path: /, fa: fa}
-  } }
-  友链: { path: /, fa: fa fa-link }
-  FOLLOW ME: { path: /, fa: fa fa-heart, submenus: { 
-    qq: { path: /, fa: fa}, 
-    sina: { path: /, fa: fa}, 
-    github: { path: /, fa: fa },
-    weichat: { path: /, fa: fa}, 
-    bilibili: { path: /, fa: fa }
-  } }
+# 百度统计、谷歌统计
+# baidu_tongji: true
+# google_analytics: true
 
-search: # 搜索
-  path: "/img"
+favicon: /img/jelly.png
+
+# your avatar's url
+avatar: /img/avatar.jpeg
+
+
+
+#是否开启多说评论，填写你在多说申请的项目名称 duoshuo: duoshuo-key
+#若使用disqus，请在博客config文件中填写disqus_shortname，并关闭多说评论
+# duoshuo: your duoshuo id
+
+# 是否开启云标签
+tagcloud: true
+
+# 是否开启文章阅读量
+leancloud_visitors:
+  enable: false
+  app_id: your_app_id
+  app_key: your_app_key
+
+# 是否开启友情链接
+# 不开启
+# friends: false
+# 开启
+friends:
+  github: https://github.com/
+# 是否开启“关于我”
+aboutme: I'm an engineer.

@@ -1,17 +1,16 @@
-<!DOCTYPE HTML>
-<!--
-	Solid State by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-  <!-- //头部模版 -->
-  <%- partial('_partial/header') %>
-  <body class="is-preload">
-    <%- partial('_partial/menu') %>
-    <!-- //内容模版 -->
-    <%- body %>
-    <!-- //尾部模版 -->
-    <%- partial('_partial/footer') %>
-  </body>
+<%- partial('_partial/head') %>
+<body>
+  <div id="container">
+    <div id="particles-js"></div>
+    <div class="left-col">
+    <%- partial('_partial/left-col', null, {cache: !config.relative_link}) %>
+    </div>
+    <div class="mid-col">
+      <%- partial('_partial/mobile-nav', null, {cache: !config.relative_link}) %>
+      <div class="body-wrap"><%- body %></div>
+      <%- partial('_partial/footer') %>
+    </div>
+    <%- partial('_partial/after-footer') %>
+  </div>
+</body>
 </html>

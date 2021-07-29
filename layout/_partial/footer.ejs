@@ -1,54 +1,12 @@
-<section id="footer">
-    <div class="inner">
-        <h2 class="major">Get in touch</h2>
-        <p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
-        <form method="post" action="#">
-            <div class="fields">
-                <div class="field">
-                    <label for="name">Name</label>
-                    <input type="text" name="name" id="name" />
-                </div>
-                <div class="field">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" />
-                </div>
-                <div class="field">
-                    <label for="message">Message</label>
-                    <textarea name="message" id="message" rows="4"></textarea>
-                </div>
-            </div>
-            <ul class="actions">
-                <li><input type="submit" value="Send Message" /></li>
-            </ul>
-        </form>
-        <ul class="contact">
-            <li class="icon solid fa-home">
-                <%= theme.company %> <br />
-                <%= theme.address %> 
-            </li>
-            <% if (theme.phone) { %> 
-                <li class="icon solid fa-phone"><%= theme.phone %></li>
-            <% } %> 
-            <% if (theme.email) { %> 
-                <li class="icon solid fa-envelope"><a href="<%- theme.email %>"><%= theme.email %></a></li>
-            <% } %> 
-            <% if (theme.twitter) { %> 
-                <li class="icon brands fa-twitter"><a href="https://www.twitter.com/<%- theme.twitter %>">twitter.com/<%= theme.twitter %> </a></li>
-            <% } %> 
-            <% if (theme.facebook) { %> 
-                <li class="icon brands fa-facebook-f"><a href="https://www.facebook.com/<%- theme.facebook %>">facebook.com/<%= theme.facebook %> </a></li>
-            <% } %> 
-            <% if (theme.instagram) { %> 
-                <li class="icon brands fa-instagram"><a href="https://www.instagram.com/<%- theme.instagram %>">instagram.com/<%= theme.instagram %> </a></li>
-            <% } %> 
-        </ul>
-        <ul class="copyright" style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;">
-            <li>&copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %></br></br>
-                Theme <a href="https://github.com/preccrep/hexo-theme-solid">Solid</a> 
-                <%= __('powered by') %> <a href="https://hexo.io/" target="_blank">Hexo</a></li>
-        </ul>
+<footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+      <div class="footer-left">
+        &copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %>
+      </div>
+        <div class="footer-right">
+          <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/preccrep/hexo-theme-jelly" target="_blank">Jelly</a>
+        </div>
     </div>
-</section>
-
-<%- js(['/js/jquery.min.js', '/js/jquery.scrollex.min.js', '/js/jquery.scrolly.min.js', '/js/browser.min.js', '/js/breakpoints.min.js', '/js/util.js', '/js/main.js', '/js/sidebar.js', '/js/search.js']) %>
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  </div>
+</footer>
