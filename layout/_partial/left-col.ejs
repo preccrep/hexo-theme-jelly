@@ -39,6 +39,13 @@
 								<a class="<%= i %>" target="_blank" href="<%- url_for(theme.subnav[i]) %>" title="<%= i %>"><%= i %></a>
 					        <%}%>
 						</div>
+						<!-- music -->
+						<% if (theme.music && theme.music.enable) { %>
+							<!-- <div style="position: absolute; bottom: 120px; left: auto; width: 85%;"> -->
+							<div style="position: absolute; left: auto; width: 85%;">
+								<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=220 height=86 src="//music.163.com/outchain/player?type=2&id=<%- theme.music.id %>&auto=1&height=66"></iframe>
+							</div>
+						<% } %>
 					</nav>
 				</section>
 				

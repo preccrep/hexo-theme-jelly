@@ -39,7 +39,7 @@ menu:
 subnav:
   # github: "#"
   # mail: "#"
-  # rss: "#"
+  # rss: "/atom.xml"
   # zhihu: "#"
   # weibo: "#"
   # douban: "#"
@@ -48,58 +48,59 @@ subnav:
   # twitter: "#"
   # linkedin: "#"
 
-# it is the relative path of the .xml file, the default path is in the source directory
-rss:
+# Set rss to false to disable feed link
+# Leave rss as blank to use site's feed link, and install hexo-generate-feed
+# Set rss to specific value if you have burned your feed already
+rss: /atom.xml
 
-# you can modify the value of excerpt_link to what you like
+# you can modify the value of excerpt_link to whatever you like
 excerpt_link: learn more
 fancybox: true
-mathjax: true
+mathjax: false
 
-# open the animation effect, true recommended
+# enable the animation effect, recommended
 animate: true
 
 # whether to open the link in the new window
 open_in_new: false
 
-# 百度统计、谷歌统计
-# baidu_tongji: true
-# google_analytics: true
-
-favicon: /img/jelly.png
+favicon: /img/favicon.ico
 
 # your avatar's url
-avatar: /img/avatar.jpeg
+avatar: 
 
+# NetEase Cloud Music (wangyiyun of course)
+music:
+  enable: false
+  # id of a certain music on NetEase Cloud Music
+  id: 
 
+# if you need to enable disqus, set 'disqus_shortname' to your disqus username
+# disqus_shortname:
 
-#是否开启多说评论，填写你在多说申请的项目名称 duoshuo: duoshuo-key
-#若使用disqus，请在博客config文件中填写disqus_shortname，并关闭多说评论
-# duoshuo: your duoshuo id
-
-# 是否开启云标签
+# whether to enable tagcloud
 tagcloud: true
 
-# 是否开启文章阅读量
+# whether to enable leancloud to count visitors
 leancloud_visitors:
   enable: false
   app_id: your_app_id
   app_key: your_app_key
 
-# 是否开启友情链接
-# 不开启
+# whether to enable the friend links, if not, set 'friends' to false and do not add any link
 # friends: false
-# 开启
 friends:
   github: https://github.com/
-# 是否开启“关于我”
-aboutme: I'm an engineer.
+# a brief introduction to yourself
+aboutme: I'm a developer.
 
 ```
 
 Uncomment the lines that are commented out in the `_config.yml` file according to your needs.
 
 Use `<!-- more -->` to specify which part to be revealed in the home page.
+
+Add a `.jpg` picture and rename it `bg.jpg` and put it in the `themes/jelly/source/img` as your background picture (must be that name, or you should change the name in the `style.styl` file in the css directory).
 
 ## Recent Update
 
