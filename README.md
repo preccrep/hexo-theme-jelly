@@ -1,6 +1,6 @@
 # hexo-theme-jelly
 
- A wonderful, eye-protected light theme for hexo. Adapted from two previous themes, [Yilia](https://github.com/litten/hexo-theme-yilia) and [Smackdown](https://github.com/smackgg/hexo-theme-smackdown), it has made some changes in the UI.
+ A wonderful, eye-protected light theme for hexo. Adapted from two previous themes, [Yilia](https://github.com/litten/hexo-theme-yilia), it has made some changes in the UI and added some other features.
 
  ## Installation method
 
