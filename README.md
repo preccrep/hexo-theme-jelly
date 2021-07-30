@@ -2,6 +2,22 @@
 
  A wonderful, elegant and eye-protected light theme for hexo. Adapted from two previous themes, [Yilia](https://github.com/litten/hexo-theme-yilia) and [smackdown](https://github.com/smackgg/hexo-theme-smackdown), it has made lots of changes in the UI, fixed some bugs and added other features.
 
+## Preview
+
+### Site
+
+[preview site](https://preccrepad.github.io/)
+
+### Screenshots
+
+<img src="https://i.loli.net/2021/07/30/kRNe5HVwBFYs2US.png" alt="preview1.png" style="zoom:50%;" />
+
+
+
+<img src="https://i.loli.net/2021/07/30/2Mzt45ZIVc6XAPQ.png" alt="preview2.png" style="zoom:50%;" />
+
+
+
  ## Installation method
 
  ```
