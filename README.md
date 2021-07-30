@@ -1,6 +1,6 @@
 # hexo-theme-jelly
 
- A wonderful, elegant and eye-protected light theme for hexo. Adapted from two previous themes, [Yilia](https://github.com/litten/hexo-theme-yilia) and [smackdown](https://github.com/smackgg/hexo-theme-smackdown), it has made lots of changes in the UI and added some other features.
+ A wonderful, elegant and eye-protected light theme for hexo. Adapted from two previous themes, [Yilia](https://github.com/litten/hexo-theme-yilia) and [smackdown](https://github.com/smackgg/hexo-theme-smackdown), it has made lots of changes in the UI, fixed some bugs and added other features.
 
  ## Installation method
 
@@ -108,7 +108,7 @@ Add a `.jpg` picture and rename it `bg.jpg` and put it in the `themes/jelly/sour
 
 ## Bug fixed
 
-
+2021.7.30 - table display overflow
 
 
 
